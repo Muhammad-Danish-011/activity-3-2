@@ -15,24 +15,13 @@ function PostData() {
 ,
 [])
    
- return(
+    return(
         first.map((data)=>
         <div style={{marginLeft:'20px',padding:'10px' ,border:'1px solid #000',backgroundColor:'#ccc'}}>
         <h1>{data.title}</h1>
-        <p>body:{data.body}</p>
+        {/* <p>body:{data.body}</p> */}
         </div>)
     )
-    }
-
-//   return <ul classes={classes.list}>
-    
-//     <div>[]</div>
-    
-    
-//     </ul>;
-
-
-
-
+  }
 
 export default PostData;
