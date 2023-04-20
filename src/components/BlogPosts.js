@@ -1,34 +1,37 @@
 import classes from './BlogPosts.module.css';
-import React, [useEffect, useState] from 'react';
+import React from "react";
+import {useEffect, useState} from 'react';
 
-const blogspsots=()=>{
-  const [First, setFirst] = useState("");
+
+  
+
+
+
+
+function BlogPosts() { 
+  const [First, setFirst] = useState([]);
 
     useEffect(()=>{
 
-      fetch("https://jsonplaceholder.typicode.com/posts");
-      .then((res)=>res.json());
-      .then(data)=>
+      fetch("https://jsonplaceholder.typicode.com/posts")
+      .then((res)=>res.json())
+      .then((data)=>
       {
-      setFirst(data) =  data;
+      setFirst(data)
       }
-    })
-},
-[]
-)
-return(
-  First && First.map(data)=> <div 
-)
+    )}
+,
+[])
+    }
 
 
+  // return <ul classes={classes.list}>
+    
+  //   <div>[]</div>
+    
+    
+  //   </ul>;
 
-
-
-function BlogPosts() {
-  return <ul classes={classes.list}></ul>;
-}
-import { useState } from 'react';
-import { useEffect } from 'react';
 
 
 
